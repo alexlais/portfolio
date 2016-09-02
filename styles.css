@@ -1,0 +1,235 @@
+@charset "UTF-8";
+*			{
+			margin:			0px;
+			padding:		0px;
+}
+body		{
+			font-family:	"Trebuchet MS", Arial, Helvetica, sans-serif;
+			font-size:		100%;
+			background:		#eee;
+}
+h1, h2		{
+			font-weight:	normal;
+}
+h3 {
+			font-size:		1.2em;
+}
+h4 {
+			font-size:		.9em;
+			margin:			3px 0px;
+	}
+a			{
+			color:			black;
+			text-decoration:none;
+			padding:		1px 5px;
+			cursor: pointer;
+}
+p			{
+			font-size:		120%;
+}
+img			{
+			border:			0px;
+}
+.header		{
+			width:			800px;
+			height:			85px;
+			background:		#c3d3e1 url(images/headerbg.jpg);
+			margin:			0px auto;
+			padding:		20px 20px 10px 30px;	
+}
+.body 		{
+			width:			835px;
+			margin:			0px auto;
+			clear:			both;
+			background:		#fff;
+			height:			800px;
+			padding-left:	15px;
+			position: 		relative;
+}
+.right 		{
+			float:			right;
+			width:			250px;
+			padding-left:	15px;
+}
+.header .right
+			{
+			text-align:		right;
+}
+.body .right
+			{
+			border-left:	2px solid black;
+			height:			770px;
+			padding-top:	30px;
+}
+dl			{
+			padding-top:	15px;
+}
+dt			{
+}
+dd			{
+			font-size:		90%;
+			padding-left:	10px;
+}
+.portfolio	{
+			float:			right;
+			width:			20px;
+			text-align:		center;
+			padding:		25px 35px;
+			font-size:		250%;
+}
+ul			{
+			list-style:		none;
+			margin-top:		-25px;
+			float:			right;
+}
+ul li		{
+			float:			left;
+}
+ul li a		{
+			display:		block;
+}
+ul li.selected a,
+a:hover 	{
+			background:		black;
+			color:			#C3D3E1;
+}
+a:hover 	{
+			background:		gray;
+			color:			black;
+}
+dd a		{
+			padding:		0px;
+			text-decoration:underline;
+}
+	dd a:hover	{
+				background:		transparent;
+				color:			black;
+				font-weight:	bold;
+	}
+
+form		{
+}
+.formfield {
+			padding:		10px 0px 10px 30px;
+}
+.formfield label		{
+			float:			left;
+			width:			150px;
+}
+.field		{
+			width:			320px;
+			border:			1px solid black;
+			padding:		3px;
+}
+.send		{
+			display:		block;
+			margin:			30px auto;
+}
+
+.content {
+			margin-right:	280px;
+			padding-top:	30px;
+}
+	.content .toggle {
+				cursor:			pointer;
+	}
+	.content h4.toggle {
+				background:url(images/jquery/toggle.gif) 0px 0px no-repeat;
+				padding-left: 	15px;
+	}
+	.content h4.toggle.active {
+				background:url(images/jquery/toggle.gif) 0px -16px no-repeat;
+				padding-left: 	15px;
+	}
+	.content .toggleblock {
+				display:		none;
+	}
+	.content p {
+				font-size:		0.8em;
+				padding-bottom:	10px;
+	}
+	fieldset {
+				padding:		10px;
+				margin-bottom:	20px;
+				border:			1px solid black;
+	}
+		fieldset legend {
+					padding:		0px 5px;
+		}
+			legend span {
+						font-size:		smaller;
+			}
+		fieldset label {
+					float:			left;
+					width:			32%;
+					padding:		3px 0px;
+					font-size:		0.8em;
+		}
+
+
+.input {
+	padding-bottom: 7px;
+}
+	.input input {
+		width: 202px;
+	}
+	.input select {
+		width: 206px;
+	}
+	label.error {
+		color:#7395B2;
+		float:right;
+		font-size:0.6em;
+		padding-left:10px;
+		padding-top:1px;
+		text-align:left;
+		width:360px;
+	}
+	.registerLogin label.error {
+		float: none;
+		margin:-5px 0 -16px;
+		display: block;
+	}
+	input.error {
+		border: 1px solid #7395B2;
+		height:17px;
+		width:206px;
+	}
+
+
+.w3c {
+	text-align:		center;
+	padding:		30px;
+}
+
+.popupBackground {
+	background:#C3D3E1;
+	display:none;
+	height:1000px;
+	left:0;
+	position:absolute;
+	top:0;
+	width:100%;
+	z-index:1;
+}
+	#popup {
+		display: none;
+		z-index:2;
+		width:		450px;
+		height:		150px;
+		border: 	5px solid #C3D3E1;
+		background: white;
+		padding:	 20px;
+	}
+	#popup p {
+		padding: 5px 0px;
+		font-weight: bold;
+		font-size:0.8em;
+	}
+	#popup .close {
+		float: right;
+		font-weight: bold;	
+		font-size:	1.1em;
+		padding: 20px;
+	}
+
