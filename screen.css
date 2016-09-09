@@ -1,0 +1,171 @@
+
+@charset "UTF-8";
+* {
+	margin:	0px;
+	padding: 0px;
+}
+body {
+	font-family:	"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:		100%;
+	background:		#F1F5FA;
+	background:		none;
+	color: #4C5566;
+	color: #305392;
+}
+h1, h2 {
+	font-weight:	normal;
+}
+h3 {
+	font-size:		1.2em;
+}
+h4 {
+	font-size:		.9em;
+	margin:			3px 0px;
+}
+a {
+	color:			black;
+	text-decoration:none;
+	padding:		1px 5px;
+	cursor: pointer;
+}
+p, dt.home	{
+	font-size:		120%;
+}
+img	{
+	border:			none;
+}
+.header	{
+	background:		#324D81;
+	margin:			0px auto;
+	padding: 		10px 10px 15px 20px;
+    width: 			820px;	
+    color: 			white;
+    border-bottom: 2px solid #FF4433;
+}
+.body {
+	width: 835px;
+	margin:	0px auto;
+	clear: both;
+	background: #fff;
+	padding-left: 15px;
+	position: relative;
+	overflow: auto;
+}
+.page {
+	float: left;
+	width: 565px;
+}
+.page  img {
+	padding: 25px 0 10px;
+	display: block;
+}
+.rail {
+	float: right;
+	width: 250px;
+	padding-left: 15px;
+	border-left:	2px solid #FF4433;
+	height:			805px;
+	padding-top:	30px;
+}
+.rail dd {
+	display:	block;
+}
+dl {
+	padding-top:	30px;
+}
+dt.home	{
+	color:	#FF4433;
+}
+dd {
+	font-size:		90%;
+	padding-left:	10px;
+	padding-bottom:	3px;
+	background:		url(/web/20140518011632/http://alexlais.com/Portfolio/images/bullet1.gif) no-repeat 0 6px;
+}
+.portfolio {
+	float:			right;
+	width:			20px;
+	text-align:		center;
+	padding:		25px 35px;
+	font-size:		250%;
+}
+ul {
+	list-style:		none;
+	margin-top:		-25px;
+	float:			right;
+}
+ul li {
+	float:			left;
+}
+ul li a		{
+			display:		block;
+}
+ul li.selected a, a:hover, 
+.item00 .item00 a, .item01 .item01 a, .item02 .item02 a, .item03 .item03 a, .item04 .item04 a, .item05 .item05 a, .item06 .item06 a, .item07 .item07 a, .item08 .item08 a, .item09 .item09 a, .item10 .item10 a, .item11 .item11 a, .item12 .item12 a, .item13 .item13 a, .item14 .item14 a, .item15 .item15 a {
+	color: #FF4433;
+}
+a:hover {
+	background:	#FF4433;
+	color: black;
+}
+.header a { 
+	color: white;
+}
+li.selected a:hover,
+.item00 .item00 a:hover, .item01 .item01 a:hover, .item02 .item02 a:hover, .item03 .item03 a:hover, .item04 .item04 a:hover, .item05 .item05 a:hover, .item06 .item06 a:hover, .item07 .item07 a:hover, .item08 .item08 a:hover, .item09 .item09 a:hover, .item10 .item10 a:hover, .item11 .item11 a:hover, .item12 .item12 a:hover, .item13 .item13 a:hover, .item14 .item14 a:hover, .item15 .item15 a:hover {
+	background:	none;
+}
+dd a {
+	padding: 0px;
+	text-decoration: underline;
+}
+dd a:hover {
+	background:		transparent;
+	color:		#FF4433;
+	font-weight:	bold;
+}
+.w3c {
+	display: none;
+}
+
+@media only screen and (max-width: 865px) {
+	body {
+		font-size: 65%;
+	}
+	.header	{
+	    width: auto;
+	}
+	.body {
+		width: auto;
+		margin:	0;
+		padding: 0;
+	}
+	.header ul {
+		float: none;
+		margin: 10px 0;
+		overflow: auto;
+	}
+	.page img {
+		width: 100%;
+		padding: 10px 0;
+	}
+	.page, .rail {
+		float: none;
+		width: auto;
+	}
+	.rail {
+		background:  #ff1500;
+		color: white;
+		height: auto;
+		padding: 10px 10px 30px;
+		clear: both;
+	}
+	.rail a, .rail a:hover, dt.home {
+		color: white;
+	}
+	.portfolio {
+		display: none;
+	}
+
+}
+
