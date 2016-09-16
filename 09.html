@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="en" ng-app="Portfolio">
+<head>
+    <meta charset="utf-8">
+    <title>Alex Lais Portfolio</title>
+    <meta name="description" content="Alex Lais Portfolio">
+    <meta name="author" content="Alex Lais">
+    <link rel="stylesheet" href="screen.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon2.ico"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+</head> 
+<body ng-controller="myController">
+    <div class="header">
+        <ul class="mainNav item09">
+          	<li><a href="08.html"><img alt="previous" src="images/previous.gif" /></a></li> 
+            <li ng-include="'includes/nav.html'"></li>
+            <li><a href="10.html"><img alt="next" src="images/next.gif"></a></li>
+        </ul>
+        <h1>Ruder Finn</h1>
+        <h2>301 East 57th Street, New York</h2>
+    </div>
+    <div class="body">
+    	<div class="page">
+    		<img src="images/glcms.jpg" />
+    	</div>
+    	<div class="rail">
+        	<p><b>GOLDEN LIVING CMS</b></p>
+            <dl>
+            	<dt>Front-End Development:</dt>
+                <dd>XHTML 1.0 Transitional</dd>
+                <dd>CSS 2.1</dd>
+                <dd>JQuery</dd>
+                <dd>Fireworks</dd>
+                <dd>Working with back-end team (ASP)</dd>
+           	</dl>
+		</div>
+	</div>
+</body>
+<script src="JS/angular.min.js"></script>
+<script src="JS/script.js"></script>

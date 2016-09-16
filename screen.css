@@ -1,86 +1,100 @@
 
 @charset "UTF-8";
-* {
-	margin:	0px;
-	padding: 0px;
-}
 body {
-	font-family:	"Trebuchet MS", Arial, Helvetica, sans-serif;
-	font-size:		100%;
-	background:		#F1F5FA;
-	background:		none;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 100%;
 	color: #4C5566;
 	color: #305392;
+	margin: 0;
 }
 h1, h2 {
-	font-weight:	normal;
+	font-weight: normal;
 }
 h3 {
-	font-size:		1.2em;
+	font-size: 1.2em;
 }
 h4 {
-	font-size:		.9em;
-	margin:			3px 0px;
+	font-size: .9em;
+	margin:	3px 0px;
+}
+ul ul, dd {
+	padding-left: 15px;
+	margin-left: 0;
 }
 a {
-	color:			black;
-	text-decoration:none;
-	padding:		1px 5px;
+	color: black;
+	text-decoration: none;
+	padding: 1px 5px;
 	cursor: pointer;
 }
 p, dt.home	{
-	font-size:		120%;
+	font-size: 120%;
+	margin-top: 0;
+	margin-bottom: 5px;
 }
 img	{
-	border:			none;
+	border:	0;
 }
 .header	{
-	background:		#324D81;
-	margin:			0px auto;
-	padding: 		10px 10px 15px 20px;
-    width: 			820px;	
-    color: 			white;
+	background:	#324D81;
+	margin:	auto;
+	padding: 10px 10px 15px 20px;
+    color: white;
     border-bottom: 2px solid #FF4433;
 }
+.header h1, .header h2 {
+	margin: 5px;
+}
+.header ul {
+	list-style:	none;
+	margin: 0;
+	padding: 0;
+}
+.header ul.mainNav {
+	float: right;
+	padding-top: 55px;	
+}
+.header ul.mainNav li {
+	float: left;
+}
+.header ul.mainNav li a	{
+	display: block;
+}
+
+
 .body {
-	width: 835px;
-	margin:	0px auto;
 	clear: both;
-	background: #fff;
-	padding-left: 15px;
-	position: relative;
 	overflow: auto;
 }
 .page {
 	float: left;
-	width: 565px;
+	width: 70%;
+	border-right: 2px solid #FF4433;
 }
-.page  img {
-	padding: 25px 0 10px;
-	display: block;
+.page h2 {
+	margin-bottom: 0;
+}
+.page img {
+	padding: 30px;
 }
 .rail {
 	float: right;
-	width: 250px;
-	padding-left: 15px;
-	border-left:	2px solid #FF4433;
-	height:			805px;
-	padding-top:	30px;
+	width: 24%;
+	padding: 30px 2% 30px 0;
 }
 .rail dd {
-	display:	block;
+	display: block;
 }
 dl {
-	padding-top:	30px;
+	margin-top:	20px;
 }
 dt.home	{
 	color:	#FF4433;
 }
 dd {
-	font-size:		90%;
-	padding-left:	10px;
-	padding-bottom:	3px;
-	background:		url(/web/20140518011632/http://alexlais.com/Portfolio/images/bullet1.gif) no-repeat 0 6px;
+	font-size: 90%;
+	padding-left: 7px;
+	padding-top: 3px;
 }
 .portfolio {
 	float:			right;
@@ -89,19 +103,23 @@ dd {
 	padding:		25px 35px;
 	font-size:		250%;
 }
-ul {
-	list-style:		none;
-	margin-top:		-25px;
-	float:			right;
-}
-ul li {
-	float:			left;
-}
-ul li a		{
-			display:		block;
-}
 ul li.selected a, a:hover, 
-.item00 .item00 a, .item01 .item01 a, .item02 .item02 a, .item03 .item03 a, .item04 .item04 a, .item05 .item05 a, .item06 .item06 a, .item07 .item07 a, .item08 .item08 a, .item09 .item09 a, .item10 .item10 a, .item11 .item11 a, .item12 .item12 a, .item13 .item13 a, .item14 .item14 a, .item15 .item15 a {
+.item00 .item00 a,
+.item01 .item01 a,
+.item02 .item02 a,
+.item03 .item03 a,
+.item04 .item04 a,
+.item05 .item05 a,
+.item06 .item06 a,
+.item07 .item07 a,
+.item08 .item08 a,
+.item09 .item09 a,
+.item10 .item10 a,
+.item11 .item11 a,
+.item12 .item12 a,
+.item13 .item13 a,
+.item14 .item14 a,
+.item15 .item15 a {
 	color: #FF4433;
 }
 a:hover {
@@ -120,9 +138,9 @@ dd a {
 	text-decoration: underline;
 }
 dd a:hover {
-	background:		transparent;
-	color:		#FF4433;
-	font-weight:	bold;
+	background:	transparent;
+	color: #FF4433;
+	font-weight: bold;
 }
 .w3c {
 	display: none;
@@ -135,15 +153,28 @@ dd a:hover {
 	.header	{
 	    width: auto;
 	}
+	.header h1, .header h2 {
+		margin: 5px 0;
+	}
 	.body {
 		width: auto;
 		margin:	0;
 		padding: 0;
 	}
-	.header ul {
+	.header {
+		padding: 10px 2%;
+	}
+	.header ul.mainNav {
+		display: block;
 		float: none;
-		margin: 10px 0;
-		overflow: auto;
+		margin: 10px auto;
+		text-align: center;
+		padding: 0;
+		font-size: 1.2em;
+	}
+	.header ul.mainNav li, .header ul.mainNav li ul, .header ul.mainNav li a {
+		float: none;
+		display: inline;
 	}
 	.page img {
 		width: 100%;
@@ -157,7 +188,7 @@ dd a:hover {
 		background:  #ff1500;
 		color: white;
 		height: auto;
-		padding: 10px 10px 30px;
+		padding: 10px 2% 30px;
 		clear: both;
 	}
 	.rail a, .rail a:hover, dt.home {
