@@ -1,1 +1,1 @@
-Portfolio: alexlais.github.io/portfolio/
+Portfolio: http://alexlais.github.io/portfolio/
